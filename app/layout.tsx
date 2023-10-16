@@ -1,8 +1,10 @@
 import './globals.css'
 import type { Metadata } from 'next'
+import favicon from '../public/round-icon.png'
 
 export const metadata: Metadata = {
-  title: 'Dailify'
+  title: 'Dailify',
+  icons: [{ rel: 'icon', url: favicon.src }],
 }
 
 export default function RootLayout({

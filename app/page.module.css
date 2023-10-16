@@ -7,11 +7,8 @@
 
 .mother {
   display: flex;
+  flex-direction: column;
   max-width: var(--max-width);
   justify-content: center;
   align-items: center;
-}
-
-.section__padding {
-  padding: 4rem 10rem;
 }

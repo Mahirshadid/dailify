@@ -1,0 +1,17 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mother {
+  display: flex;
+  max-width: var(--max-width);
+  justify-content: center;
+  align-items: center;
+}
+
+.section__padding {
+  padding: 4rem 10rem;
+}

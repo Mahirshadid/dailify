@@ -1,0 +1,34 @@
+.times {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.times_contents {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    max-width: var(--max-width);
+    border: 2px solid black;
+
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.times_contents-heading {
+    display: flex;
+    width: 100%;
+}
+
+.times_contents-times {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.times_contents-times ul {
+    list-style-type: none;
+}

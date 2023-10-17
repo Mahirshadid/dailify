@@ -69,6 +69,7 @@
 .times_contents-times h3 {
     color: var(--black);
     font-weight: 600;
+    margin-bottom: 10px;
 }
 
 .times_contents-times .navigation-buttons {

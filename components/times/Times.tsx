@@ -84,7 +84,6 @@ const Times = () => {
 
   return (
     <div className="times section__padding" id="times">
-      <h1>Prayer Times</h1>
       <div className="times_contents">
         <div className='times_contents-dates'>
           <h3>{hijriMonth}</h3>

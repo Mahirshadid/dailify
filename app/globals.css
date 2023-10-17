@@ -58,8 +58,8 @@ h3 {
 }
 
 .color-change-2x {
-	-webkit-animation: color-change-2x 4s linear infinite alternate both;
-	animation: color-change-2x 4s linear infinite alternate both;
+	-webkit-animation: color-change-2x 6s linear infinite alternate both;
+	animation: color-change-2x 6s linear infinite alternate both;
 }
 
 @-webkit-keyframes color-change-2x {

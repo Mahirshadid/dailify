@@ -2,24 +2,21 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .times_contents {
     display: flex;
     flex-direction: column;
 
-    width: 100%;
     max-width: var(--max-width);
-    border: 2px solid black;
 
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
 }
 
-.times_contents-heading {
-    display: flex;
-    width: 100%;
+.times h1 {
+    margin-bottom: 30px;
 }
 
 .times_contents-times {
@@ -27,8 +24,127 @@
 
     display: flex;
     flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    height: 350px;
 }
 
-.times_contents-times ul {
+.cities {
+    width: 200px;
+    padding: 15px;
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--border-radius);
+
+    box-shadow: 0 1px 5px rgb(136, 136, 136);
+}
+
+.times_contents-dates {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+.times_contents-times ul li {
     list-style-type: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    color: var(--grey);
+}
+
+.times_contents-times h3 {
+    color: var(--black);
+    font-weight: 600;
+}
+
+.times_contents-times .navigation-buttons {
+    width: fit-content;
+
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    
+    top: 0;
+    right: 0;
+
+    gap: 10px;
+
+    padding: 1rem;
+
+}
+
+.navigation-buttons button {
+    padding: 0.7rem 1rem;
+    width: 100px;
+
+    text-align: center;
+    outline: none;
+    border: 1px solid rgb(115, 115, 115);
+    border-radius: var(--border-radius);
+    background-color: #FFFFFF;
+}
+
+.navigation-buttons button:hover {
+    color: var(--green);
+    border: 1px solid var(--green);
+}
+
+@media (max-width: 1150px) {
+    .times_contents-times {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 40px;
+        height: fit-content;
+    }
+    .times_contents-times .cities {
+        width: 200px;
+        margin-right: 0;
+    }
+
+    .times_contents-times .navigation-buttons {
+        top: unset;
+        bottom: 0;
+    }
+}
+
+@media (max-width: 790px) {
+    .times_contents-times {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 40px;
+        width: 100%;
+    }
+
+    .times_contents-times .navigation-buttons {
+        position: relative;
+        padding: 0;
+    }
+}
+
+@media (max-width: 530px) {
+    .times_contents-times {
+        display: flex;
+        flex-direction: column;
+    }
+    .times_contents-heading {
+        text-align: center;
+    }
+
+    .times_contents-times .cities {
+        padding: 0.7rem;
+    }
 }

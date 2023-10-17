@@ -10,7 +10,9 @@ interface TimeData {
 const Times = () => {
   const [loading, setLoading] = useState(true);
   const [cityData, setCityData] = useState<{ [city: string]: TimeData }>({});
-  const [currentDate, setCurrentDate] = useState();
+  const [currentDate, setCurrentDate] = useState('');
+  const [hijriDate, setHijriDate] = useState('');
+  const [hijriMonth, sethijriMonth] = useState('');
 
   const cities = [
     'Dhaka',
@@ -36,7 +38,9 @@ const Times = () => {
           ...prevData,
           [city]: data.data.timings,
         }));
-        setCurrentDate(data.data.date.readable);
+        setCurrentDate(data.data.date.gregorian.date);
+        setHijriDate(data.data.date.hijri.date);
+        sethijriMonth(data.data.date.hijri.month.en);
       } catch (error) {
         console.error('Error fetching time data:', error);
       }
@@ -62,7 +66,7 @@ const Times = () => {
     return date.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
   };
 
-  const itemsPerPage = 4; // Number of cities to display at a time
+  const itemsPerPage = 4;
   const [currentPage, setCurrentPage] = useState(0);
 
   const nextPage = () => {
@@ -80,19 +84,24 @@ const Times = () => {
 
   return (
     <div className="times section__padding" id="times">
+      <h1>Prayer Times</h1>
       <div className="times_contents">
-        <h1>Prayer Times - {currentDate}</h1>
+        <div className='times_contents-dates'>
+          <h3>{hijriMonth}</h3>
+          <h3>{hijriDate}</h3>
+          <h3>{currentDate}</h3>
+        </div>
         {loading ? (
           <p>Loading...</p>
         ) : (
           <div className='times_contents-times'>
             {citiesToShow.map((city) => (
-              <div key={city}>
-                <h3>{city}:</h3>
+              <div key={city} className='cities color-change-2x'>
+                <h3>{city}</h3>
                 <ul>
                   {specificPrayerTimes.map((prayerTime) => (
                     <li key={prayerTime}>
-                      {keyMapping[prayerTime]}: {formatTimeTo12Hour(cityData[city][prayerTime])}
+                      <span>{keyMapping[prayerTime]}</span>  <span>{formatTimeTo12Hour(cityData[city][prayerTime])}</span>
                     </li>
                   ))}
                 </ul>
@@ -106,7 +115,7 @@ const Times = () => {
                 onClick={nextPage}
                 disabled={currentPage >= Math.ceil(cities.length / itemsPerPage) - 1}
               >
-                Next
+                More
               </button>
             </div>
           </div>

@@ -14,6 +14,7 @@ const Navbar = () => {
       <div className='navbar_links'>
         <p><a href='#times'>Times</a></p>
         <p><a href='#papers'>Papers</a></p>
+        <p><a href='#live'>LiveTv</a></p>
       </div>
     </div>
   )

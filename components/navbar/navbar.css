@@ -8,8 +8,6 @@
 
     align-items: center;
     justify-content: space-between;
-
-    border-bottom: 3px solid rgba(128, 128, 128, 0.144);
 }
 
 .navbar_logo {
@@ -41,17 +39,17 @@
     color: var(--green);
 }
 
-@media screen and (max-width: 375px) {
-    .navbar_links {
-        display: none;
-    }
-}
-
 @media screen and (max-width: 650px) {
     .navbar_links {
         padding: 1rem 1rem;
     }
     .navbar_logo {
         padding: 1rem 1rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .navbar_links {
+        display: none;
     }
 }

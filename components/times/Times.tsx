@@ -87,8 +87,8 @@ const Times = () => {
       <div className="times_contents">
         <div className='times_contents-dates'>
           <h3>{hijriMonth}</h3>
-          <h3>{hijriDate}</h3>
-          <h3>{currentDate}</h3>
+          <h3>Arabic {hijriDate}</h3>
+          <h3>Gregorian {currentDate}</h3>
         </div>
         {loading ? (
           <p>Loading...</p>

@@ -6,6 +6,7 @@
     height: fit-content;
 
     background: var(--gradient-bg);
+    width: 100%;
 }
 
 .hero_contents {
@@ -14,7 +15,7 @@
     align-items: center;
     justify-content: space-between;
 
-    width: 100%;
+    width: 90%;
 }
 
 .hero_contents-text {

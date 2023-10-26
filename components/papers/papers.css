@@ -1,0 +1,74 @@
+.papers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.papers_contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.papers_contents h2 {
+    margin-bottom: 40px;
+}
+
+.papers_contents-papers {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.paper-cards {
+    box-shadow: var(--box-shadow);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    margin: 10px;
+
+    height: 150px;
+    width: 180px;
+}
+
+.paper-cards:hover {
+    box-shadow: 0 1px 5px var(--green);
+}
+
+.paper-cards p a {
+    border: 1px solid var(--grey);
+    padding: 5px 30px;
+
+    cursor: pointer;
+
+    border-radius: var(--border-radius);
+}
+
+.paper-cards p a:hover {
+    color: var(--green);
+    border: 1px solid var(--green);
+}
+
+@media (max-width: 1150px) {
+    .papers_contents-papers {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 40px;
+        height: fit-content;
+    }
+}
+
+@media (max-width: 530px) {
+    .papers_contents-papers {
+        display: flex;
+        flex-direction: column;
+    }
+}

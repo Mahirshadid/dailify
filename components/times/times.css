@@ -37,7 +37,7 @@
     flex-direction: column;
     border-radius: var(--border-radius);
 
-    box-shadow: 0 1px 5px rgb(136, 136, 136);
+    box-shadow: var(--box-shadow);
 }
 
 .times_contents-dates {
@@ -77,11 +77,6 @@
 
     display: flex;
     flex-direction: row;
-    position: absolute;
-    
-    top: 0;
-    right: 0;
-
     gap: 10px;
 
     padding: 1rem;
@@ -104,35 +99,16 @@
     border: 1px solid var(--green);
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1250px) {
     .times_contents-times {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-gap: 40px;
         height: fit-content;
     }
     .times_contents-times .cities {
         width: 200px;
         margin-right: 0;
-    }
-
-    .times_contents-times .navigation-buttons {
-        top: unset;
-        bottom: 0;
-    }
-}
-
-@media (max-width: 790px) {
-    .times_contents-times {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 40px;
-        width: 100%;
-    }
-
-    .times_contents-times .navigation-buttons {
-        position: relative;
-        padding: 0;
     }
 }
 

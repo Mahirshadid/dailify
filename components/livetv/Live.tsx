@@ -16,14 +16,14 @@ const Live: React.FC = () => {
         ></iframe>
       </div>
       <div className='live_contents'>
-        <iframe 
-        className='custom-iframe' 
-        src="https://www.youtube.com/embed/Ko8uFL2UG4E" 
-        title="Ekattor TV Live" 
-        frameBorder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        allowFullScreen
-        ></iframe>
+      <iframe 
+      className='custom-iframe' 
+      src="https://www.youtube.com/embed/nz69VmtX1wU" 
+      title="INDEPENDENT TV LIVE | ইনডিপেনডেন্ট টিভি লাইভ | সরাসরি ইনডিপেনডেন্ট টিভি | LIVE BANGLA TV | ITV LIVE" 
+      frameBorder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      allowFullScreen
+      ></iframe>
       </div>
       <div className='live_contents'>
         <iframe className='custom-iframe'
@@ -62,6 +62,17 @@ const Live: React.FC = () => {
         frameBorder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
         allowFullScreen></iframe>
+      </div>
+      <div className='live_contents'>
+        <h2>TRT World Live</h2>
+        <iframe 
+        className='custom-iframe' 
+        src="https://www.youtube.com/embed/5VF4aor94gw" 
+        title="LIVE: Watch TRT World" 
+        frameBorder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowFullScreen
+        ></iframe>
       </div>
     </div>
   );

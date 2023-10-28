@@ -9,8 +9,8 @@ const Hero = () => {
     <div className='hero section__padding'>
       <div className='hero_contents'>
         <div className='hero_contents-text'>
-          <h1>What is Dailify?</h1>
-          <h3>Assalamu Alaikum, I am a web app, made
+          <h1 className='focus-in-contract '>What is Dailify?</h1>
+          <h3 className='focus-in-contract '>Assalamu Alaikum, I am a web app, made
             out of a simple idea to provide a bit of help
             in life of you. Explore me, you'll figure
             me out!

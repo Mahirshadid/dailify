@@ -125,6 +125,33 @@ h3 {
   }
 }
 
+.slide-tl {
+	-webkit-animation: slide-tl 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-tl 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-tl {
+  0% {
+    -webkit-transform: translateY(0) translateX(0);
+            transform: translateY(0) translateX(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px) translateX(-100px);
+            transform: translateY(-100px) translateX(-100px);
+  }
+}
+@keyframes slide-tl {
+  0% {
+    -webkit-transform: translateY(0) translateX(0);
+            transform: translateY(0) translateX(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px) translateX(-100px);
+            transform: translateY(-100px) translateX(-100px);
+  }
+}
+
+
 .slide-top {
 	-webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -136,8 +163,8 @@ h3 {
             transform: translateY(0);
   }
   100% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
   }
 }
 @keyframes slide-top {
@@ -146,10 +173,43 @@ h3 {
             transform: translateY(0);
   }
   100% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
   }
 }
+
+.focus-in-contract {
+	-webkit-animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes focus-in-contract {
+  0% {
+    letter-spacing: 1em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-contract {
+  0% {
+    letter-spacing: 1em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
 
 
 @media screen and (max-width: 950px) {

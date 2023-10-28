@@ -12,9 +12,9 @@ const Navbar = () => {
         style={{width:'20%',height:'20%',minWidth:'100px'}}/></a>
       </div>
       <div className='navbar_links'>
-        <p><a href='#times'>Times</a></p>
-        <p><a href='#papers'>Papers</a></p>
-        <p><a href='#live'>LiveTv</a></p>
+        <p><a href='#times' className='focus-in-contract '>Times</a></p>
+        <p><a href='#papers' className='focus-in-contract '>Papers</a></p>
+        <p><a href='#live' className='focus-in-contract '>LiveTv</a></p>
       </div>
     </div>
   )

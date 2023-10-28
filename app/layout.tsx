@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import favicon from '../public/round-icon.png'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'Dailify',
@@ -14,7 +15,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>{children}
+      </body>
     </html>
   )
 }

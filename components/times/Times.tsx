@@ -31,7 +31,7 @@ const Times = () => {
     async function fetchData(city: string) {
       try {
         const res = await fetch(
-          `http://api.aladhan.com/v1/timingsByCity?city=${city}&country=Bangladesh&method=8`
+          `https://api.aladhan.com/v1/timingsByCity?city=${city}&country=Bangladesh&method=8`
         );
         const data = await res.json();
         setCityData((prevData) => ({

@@ -26,13 +26,12 @@ const Live: React.FC = () => {
       ></iframe>
       </div>
       <div className='live_contents'>
-        <iframe className='custom-iframe'
-        src="https://www.youtube.com/embed/F_yTmlDd7Uc" 
-        title="JAMUNA TV LIVE" 
-        frameBorder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        allowFullScreen
-        ></iframe>
+      <iframe className='custom-iframe' 
+      src="https://www.youtube.com/embed/sXMYIedARHo" 
+      title="JAMUNA TV LIVE | JTV LIVE | সরাসরি যমুনা টিভি | LIVE STREAMING | BANGLA TV LIVE | BD TV LIVE" 
+      frameBorder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      allowFullScreen></iframe>
       </div>
       <div className='live_contents'>
         <iframe 
@@ -45,10 +44,10 @@ const Live: React.FC = () => {
         ></iframe>
       </div>
       <div className='live_contents'>
-      <iframe  
-      className='custom-iframe' 
-      src="https://www.youtube.com/embed/5JdZ9gMjE_I" 
-      title="BanglaVision LIVE | বাংলাভিশন লাইভ | Live TV Streaming | 24/7 Live TV" 
+      <iframe 
+      className='custom-iframe'
+      src="https://www.youtube.com/embed/FpF2eqAAeR0" 
+      title="Channel i Live || Bangla tv News || Live Streaming || Live NOW" 
       frameBorder="0" 
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
       allowFullScreen></iframe>
@@ -73,6 +72,46 @@ const Live: React.FC = () => {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
         allowFullScreen
         ></iframe>
+      </div>
+      <div className='live_contents'>
+        <h2>Feeling down? Listen Surah Ad-Duha</h2>
+        <iframe 
+        className='custom-iframe'
+        src="https://www.youtube.com/embed/jbHQCbp86Kg" 
+        title="Surah Ad-Duha - Mishary Alafasy" 
+        frameBorder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowFullScreen></iframe>
+      </div>
+      <div className='live_contents'>
+        <h2>Surah Ar-Rahman</h2>
+        <iframe 
+        className='custom-iframe'
+        src="https://www.youtube.com/embed/tQHAwV9B8hQ" 
+        title="Surah Ar-Rahman" 
+        frameBorder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowFullScreen></iframe>
+      </div>
+      <div className='live_contents'>
+        <h2>Surah Al-Kahf</h2>
+        <iframe 
+        className='custom-iframe'
+        src="https://www.youtube.com/embed/SOB3wEIRul4" 
+        title="Surah Al-Kahf" 
+        frameBorder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowFullScreen></iframe>
+      </div>
+      <div className='live_contents'>
+        <h2>Surah Yaseen</h2>
+        <iframe 
+        className='custom-iframe'
+        src="https://www.youtube.com/embed/yMg4DXHQooc" 
+        title="Surah Yaseen" 
+        frameBorder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowFullScreen></iframe>
       </div>
     </div>
   );

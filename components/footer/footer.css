@@ -70,13 +70,18 @@
     border-radius: 5px;
     margin-top: 5px;
     padding: 3px 8px;
+    width: 70px;
+
+    font-size: 12px;
+    color: black;
+    cursor: pointer;
 }
 
 .copybtn:hover {
     color: rgb(199, 98, 80);
     border: 1px solid rgb(199, 98, 80);
 }
-  
+
 .footer_dev_t.visible {
     display: block;
 }
@@ -86,6 +91,24 @@
     background-color: #e2ffc1bb;
     border: 1px solid var(--grey);
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    background-color: rgb(231, 132, 132);
+}
+
+.dtbtn {
+    padding: 3px 8px;
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+
+.dtbtn:hover {
+    color: rgb(199, 98, 80);
+    border: 1px solid rgb(199, 98, 80);
 }
 
 @media screen and (max-width: 650px) {
